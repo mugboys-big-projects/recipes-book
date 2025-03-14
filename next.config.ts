@@ -1,7 +1,7 @@
-const withPWA = require('next-pwa')(require('./next-pwa'))
+import type { NextConfig } from "next";
 
-const nextConfig: import('next').NextConfig = withPWA({
-  // ...your existing next config
-})
+const nextConfig: NextConfig = {
+  /* config options here */
+};
 
-module.exports = nextConfig
+export default nextConfig;

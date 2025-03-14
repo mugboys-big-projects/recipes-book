@@ -1,0 +1,39 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --button-background: #ffffff;
+  --button-border: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --button-background: #0a0a0a;
+    --button-border: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background: var(--button-background);
+  color: var(--foreground);
+  border: 2px solid var(--button-border);
+  padding: 10px 20px;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--button-border);
+  color: var(--foreground);
+  border: 2px solid var(--button-background);
+  padding: 10px 20px;
+  transform: scale(110%);
+  cursor: pointer;
+}
